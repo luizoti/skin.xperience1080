@@ -465,9 +465,9 @@
                         <item id="4">
                             <label>$LOCALIZE[20410]</label>
                             <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PreviousMenu</onclick>
-                            <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+                            <onclick condition="!Skin.HasSetting(PlayTrailer.Minimized)">ActivateWindow(videos,$INFO[ListItem.Title,plugin://plugin.video.youtube/kodion/search/query/?q=, trailer],return)</onclick>
                             <onclick condition="Skin.HasSetting(PlayTrailer.Minimized)">PlayMedia($INFO[ListItem.Trailer],false,1)</onclick>
-                            <visible>!String.IsEmpty(ListItem.Trailer)</visible>
+                            <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
                         </item>
                         <item id="5">
                             <description>Get Artwork</description>
