@@ -234,9 +234,10 @@
                     </control>
                     <control type="group" id="502">
                         <description>Spotlight (random items)</description>
-                        <posx>289</posx>
+                         <posx>289</posx>
                         <posy>0</posy>
                         <control type="button" id="5021">
+	                          <onclick condition="String.IsEqual(Skin.String(HomeWidget.1.Type),6) | String.IsEqual(Skin.String(HomeWidget.1.Type),7) | String.IsEqual(Skin.String(HomeWidget.1.Type),15) | String.IsEqual(Skin.String(HomeWidget.1.Type),16)">ActivateWindow(videos,$INFO[Container(5022).ListItem.Title,plugin://plugin.video.youtube/kodion/search/query/?q=, trailer],return)</onclick>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>839</width>
@@ -433,6 +434,8 @@
                         <description>Ongoing tv shows</description>
                         <posx>1124</posx>
                         <control type="button" id="5031">
+	                          <onclick condition="String.IsEqual(Skin.String(HomeWidget.2.Type),6) | String.IsEqual(Skin.String(HomeWidget.2.Type),7) | String.IsEqual(Skin.String(HomeWidget.2.Type),15) | String.IsEqual(Skin.String(HomeWidget.2.Type),16)">ActivateWindow(videos,$INFO[Container(5032).ListItem.Title,plugin://plugin.video.youtube/kodion/search/query/?q=, trailer],return)</onclick>
+
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>382</width>
@@ -502,7 +505,7 @@
                                 </control>
                             </focusedlayout>
                             <content target="video">$VAR[Widget.2.Home]</content>
-                        </control>
+                            </control>
                         <control type="image">
                             <description>Title overlay</description>
                             <posx>0</posx>
