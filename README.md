@@ -1,6 +1,6 @@
 ## Xperience1080 for Kodi 19.x (Matrix)
 
-![Xperience1080 Logo](https://raw.githubusercontent.com/xperience1080/skin.xperience1080/master/resources/icon.png)
+!Screen](https://imgur.com/KNRKvtH)
 
 Xperience1080 is one of the most beautiful skin for Kodi that was ever created.
 
