@@ -2,7 +2,7 @@
 
 <img alt="top" src="https://i.imgur.com/KNRKvtH.jpg">
 
-![More Screenshots](https://imgur.com/a/fAIe172)
+[More Screenshots](https://imgur.com/a/fAIe172)
 
 Xperience1080 is one of the most beautiful skin for Kodi that was ever created.
 
