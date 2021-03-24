@@ -1,8 +1,8 @@
 ## Xperience1080 Skin for Kodi 19.x (Matrix)
 
 <img alt="top" src="https://i.imgur.com/KNRKvtH.jpg">
-<img alt="top" src="https://i.imgur.com/d8klD2w.jpeg" width="50%">
-<img alt="top" src="https://i.imgur.com/KCw4W2o.jpeg" width="50%">
+<img alt="top" src="https://i.imgur.com/d8klD2w.jpeg" width="40%">
+<img alt="top" src="https://i.imgur.com/KCw4W2o.jpeg" width="40%">
 
 
 [More Screenshots](https://imgur.com/a/fAIe172)
