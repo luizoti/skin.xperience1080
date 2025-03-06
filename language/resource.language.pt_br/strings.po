@@ -988,9 +988,6 @@ msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Ocultar data"
 
-________________________________________________
-
-
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Ocultar data"
