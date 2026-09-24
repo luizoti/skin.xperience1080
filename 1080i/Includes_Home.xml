@@ -39,23 +39,23 @@
                 <control type="group" id="150">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatSearch]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatSearch]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatHome]" reversible="true">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatHome]" reversible="true">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(1) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation type="Conditional" condition="!$EXP[HomeCatSearch] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -182,45 +182,45 @@
                 <control type="group" id="550">
                     <posy>100</posy>
                     <posx>407</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(1)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatSearch]" reversible="true">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(1)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatSearch]" reversible="true">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatHome]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatHome]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(9) |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(9)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(9) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatLiveTV] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(9)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(9) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(9) |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(9)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(9) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatLiveTV] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(9)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(9) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(9) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(2) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation type="Conditional" condition="!$EXP[HomeCatHome] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -272,7 +272,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(2) + !Control.HasFocus(5021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">[Control.HasFocus(525) | Control.HasFocus(501) | ControlGroup(502).HasFocus | ControlGroup(503).HasFocus] + !Control.HasFocus(5021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>5024</pagecontrol>
@@ -478,7 +478,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(2) + !Control.HasFocus(5031)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">[Control.HasFocus(525) | Control.HasFocus(501) | ControlGroup(502).HasFocus | ControlGroup(503).HasFocus] + !Control.HasFocus(5031)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>5034</pagecontrol>
@@ -873,45 +873,45 @@
                 <control type="group" id="950">
                     <posy>100</posy>
                     <posx>390</posx>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatHome]" reversible="true">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(2)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatHome]" reversible="true">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(9)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatLiveTV]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(9)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatLiveTV]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(3) |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(3) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatMovies] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(3) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(3) |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(3) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatMovies] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(3) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(3) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation effect="slide" end="-156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(1)">Conditional</animation>
-                    <animation effect="slide" end="156" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(2)">Conditional</animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(9) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation effect="slide" end="-156" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatSearch]">Conditional</animation>
+                    <animation effect="slide" end="156" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatHome]">Conditional</animation>
+                    <animation type="Conditional" condition="!$EXP[HomeCatLiveTV] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -1471,43 +1471,43 @@
                 <control type="group" id="250">
                     <posy>100</posy>
                     <posx>407</posx>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(9) |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(9)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatLiveTV] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(9) |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(9)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatLiveTV] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(3)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatMovies]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(3)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatMovies]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(4) |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatTVShows] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(4) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(4) |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatTVShows] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(4) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(4) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(3) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation type="Conditional" condition="!$EXP[HomeCatMovies] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -1557,7 +1557,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(3) + !Control.HasFocus(2021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">[Control.HasFocus(225) | Control.HasFocus(201) | ControlGroup(202).HasFocus | Control.HasFocus(203)] + !Control.HasFocus(2021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>2024</pagecontrol>
@@ -2176,43 +2176,43 @@
                 <control type="group" id="350">
                     <posy>100</posy>
                     <posx>407</posx>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(3) |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatMovies] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                     <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(3) |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                     <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatMovies] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(4)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatTVShows]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(4)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatTVShows]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(5) |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatMusic] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                     <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(5) |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                     <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatMusic] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(5) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(5) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(4) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation type="Conditional" condition="!$EXP[HomeCatTVShows] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -2262,7 +2262,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(4) + !Control.HasFocus(3021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">[Control.HasFocus(325) | Control.HasFocus(301) | ControlGroup(302).HasFocus | Control.HasFocus(303)] + !Control.HasFocus(3021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>3024</pagecontrol>
@@ -2880,45 +2880,45 @@
                 <control type="group" id="450">
                     <posy>100</posy>
                     <posx>390</posx>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(4) |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatTVShows] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(4) |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatTVShows] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(5)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatMusic]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(5)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatMusic]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(10) |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatPictures] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(10) |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatPictures] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(10) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(10) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation effect="slide" end="-39" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(2) | Container(20).HasFocus(3) | Container(20).HasFocus(4)">Conditional</animation>
-                    <animation effect="slide" end="39" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(6) | Container(20).HasFocus(7) | Container(20).HasFocus(8)">Conditional</animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(5) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation effect="slide" end="-39" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatHome] | $EXP[HomeCatMovies] | $EXP[HomeCatTVShows]">Conditional</animation>
+                    <animation effect="slide" end="39" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatPrograms] | $EXP[HomeCatWeather] | $EXP[HomeCatSettings]">Conditional</animation>
+                    <animation type="Conditional" condition="!$EXP[HomeCatMusic] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -2964,7 +2964,7 @@
                             <ondown condition="Skin.HasSetting(KioskMode)">21</ondown>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(5) + !Control.HasFocus(4021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">[Control.HasFocus(425) | Control.HasFocus(401) | ControlGroup(402).HasFocus | Control.HasFocus(403)] + !Control.HasFocus(4021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>4024</pagecontrol>
@@ -3626,45 +3626,45 @@
                 <control type="group" id="1050">
                     <posy>100</posy>
                     <posx>407</posx>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(5) |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatMusic] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(5) |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatMusic] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(10)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatPictures]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(10)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatPictures]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(6) |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatPrograms] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(6) |
-                        [Container(20).HasFocus(7) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(6) + !Control.IsVisible(7)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatPrograms] |
+                        [$EXP[HomeCatWeather] + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(6) + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation effect="slide" end="-39" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(2) | Container(20).HasFocus(3) | Container(20).HasFocus(4)">Conditional</animation>
-                    <animation effect="slide" end="39" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(6) | Container(20).HasFocus(7) | Container(20).HasFocus(8)">Conditional</animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(10) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation effect="slide" end="-39" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatHome] | $EXP[HomeCatMovies] | $EXP[HomeCatTVShows]">Conditional</animation>
+                    <animation effect="slide" end="39" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatPrograms] | $EXP[HomeCatWeather] | $EXP[HomeCatSettings]">Conditional</animation>
+                    <animation type="Conditional" condition="!$EXP[HomeCatPictures] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -3705,7 +3705,7 @@
                             <onfocus condition="String.IsEmpty(Window.Property(ContextMenuOpen))">SetFocus(10021)</onfocus>
                             <viewtype label="List">List</viewtype>
                             <scrolltime tween="cubic" easing="out">800</scrolltime>
-                            <autoscroll time="15000" delay="15000" repeat="15000">Container(20).HasFocus(10) + !Control.HasFocus(10021)</autoscroll>
+                            <autoscroll time="15000" delay="15000" repeat="15000">[Control.HasFocus(1025) | Control.HasFocus(1001) | ControlGroup(1002).HasFocus | Control.HasFocus(1003)] + !Control.HasFocus(10021)</autoscroll>
                             <orientation>horizontal</orientation>
                             <preloaditems>2</preloaditems>
                             <pagecontrol>10024</pagecontrol>
@@ -4339,45 +4339,45 @@
                 <control type="group" id="650">
                     <posy>100</posy>
                     <posx>440</posx>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(10) |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatPictures] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(10) |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatPictures] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(6)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatPrograms]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(6)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatPrograms]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(7) |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(7)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatWeather] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(7)]">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(7) |
-                        [Container(20).HasFocus(8) + !Control.IsVisible(7)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatWeather] |
+                        [$EXP[HomeCatSettings] + !Control.IsVisible(7)]">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation effect="slide" end="-50" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(5) | [Container(20).HasFocus(4) + Skin.HasSetting(HomeMusic)] | [Container(20).HasFocus(3) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [Container(20).HasFocus(2) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]">Conditional</animation>
-                    <animation effect="slide" end="50" time="500" tween="cubic" easing="inout" condition="Container(20).HasFocus(7)">Conditional</animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(6) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation effect="slide" end="-50" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatMusic] | [$EXP[HomeCatTVShows] + Skin.HasSetting(HomeMusic)] | [$EXP[HomeCatMovies] + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows)] | [$EXP[HomeCatHome] + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)]">Conditional</animation>
+                    <animation effect="slide" end="50" time="500" tween="cubic" easing="inout" condition="$EXP[HomeCatWeather]">Conditional</animation>
+                    <animation type="Conditional" condition="!$EXP[HomeCatPrograms] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -4809,43 +4809,43 @@
                 <control type="group" id="750">
                     <posy>100</posy>
                     <posx>407</posx>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(6) |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatPrograms] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(6) |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatPrograms] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(7)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatWeather]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(7)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatWeather]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatSettings]" reversible="true">
                         <effect type="slide" start="-1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatSettings]" reversible="true">
                         <effect type="slide" start="0" end="-500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(7) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation type="Conditional" condition="!$EXP[HomeCatWeather] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>
@@ -4946,7 +4946,7 @@
                                 <animation effect="fade" start="100" delay="500" end="0" time="10">Hidden</animation>
                                 <aspectratio>scale</aspectratio>
                                 <imagepath background="true">$VAR[Weather.FanartDir]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-                                <visible>Container(20).HasFocus(7)</visible>
+                                <visible>$EXP[HomeCatWeather]</visible>
                             </control>
                             <control type="image">
                                 <description>Title overlay</description>
@@ -5573,37 +5573,37 @@
                 <control type="group" id="850">
                     <posy>100</posy>
                     <posx>535</posx>
-                    <animation type="WindowOpen" reversible="true" condition="Container(20).HasFocus(7) |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(7)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(7) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowOpen" reversible="true" condition="$EXP[HomeCatWeather] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(7)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(7) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="1500" end="0" tween="cubic" easing="out" time="700" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" delay="250" />
                     </animation>
-                    <animation type="WindowClose" reversible="true" condition="Container(20).HasFocus(7) |
-                        [Container(20).HasFocus(6) + !Control.IsVisible(7)] |
-                        [Container(20).HasFocus(10) + !Control.IsVisible(7) + !Control.IsVisible(6)] |
-                        [Container(20).HasFocus(5) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
-                        [Container(20).HasFocus(4) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
-                        [Container(20).HasFocus(3) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
-                        [Container(20).HasFocus(9) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
-                        [Container(20).HasFocus(2) + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
+                    <animation type="WindowClose" reversible="true" condition="$EXP[HomeCatWeather] |
+                        [$EXP[HomeCatPrograms] + !Control.IsVisible(7)] |
+                        [$EXP[HomeCatPictures] + !Control.IsVisible(7) + !Control.IsVisible(6)] |
+                        [$EXP[HomeCatMusic] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10)] |
+                        [$EXP[HomeCatTVShows] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5)] |
+                        [$EXP[HomeCatMovies] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4)] |
+                        [$EXP[HomeCatLiveTV] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3)] |
+                        [$EXP[HomeCatHome] + !Control.IsVisible(7) + !Control.IsVisible(6) + !Control.IsVisible(10) + !Control.IsVisible(5) + !Control.IsVisible(4) + !Control.IsVisible(3) + !Control.IsVisible(9)]">
                         <effect type="slide" start="0" end="500" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="WindowOpen" condition="Container(20).HasFocus(8)" reversible="true">
+                    <animation type="WindowOpen" condition="$EXP[HomeCatSettings]" reversible="true">
                         <effect type="zoom" start="150" end="100" center="1160,386" tween="sine" easing="out" time="350" />
                         <effect type="fade" start="25" end="100" tween="sine" easing="in" time="350" />
                     </animation>
-                    <animation type="WindowClose" condition="Container(20).HasFocus(8)" reversible="true">
+                    <animation type="WindowClose" condition="$EXP[HomeCatSettings]" reversible="true">
                         <effect type="zoom" start="100" end="150" center="1160,386" tween="sine" delay="250" easing="out" time="350" />
                         <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="350" time="250" />
                     </animation>
-                    <animation type="Conditional" condition="!Container(20).HasFocus(8) | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
+                    <animation type="Conditional" condition="!$EXP[HomeCatSettings] | Container(20).OnScrollNext | Container(20).OnScrollPrevious | Container(20).Scrolling | Window.IsVisible(shutdownmenu)">
                         <effect type="fade" start="100" end="80" time="500" tween="cubic" easing="inout" />
                         <effect type="zoom" start="100" end="80" time="500" tween="cubic" easing="inout" center="1160,386" />
                     </animation>

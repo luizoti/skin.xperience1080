@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <expression name="HomeHideOnActiveDialog">!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(favouritesbrowser) + !Window.IsActive(script-globalsearch.xml) + ![Window.IsVisible(virtualkeyboard) + !String.IsEmpty(Window.Property(HomeSearch))]</expression>
+    <expression name="HomeCatSearch">Control.HasFocus(125) | ControlGroup(150).HasFocus</expression>
+    <expression name="HomeCatHome">Control.HasFocus(525) | Control.HasFocus(501) | ControlGroup(502).HasFocus | ControlGroup(503).HasFocus</expression>
+    <expression name="HomeCatLiveTV">Control.HasFocus(925) | Control.HasFocus(901) | ControlGroup(902).HasFocus | Control.HasFocus(903)</expression>
+    <expression name="HomeCatMovies">Control.HasFocus(225) | Control.HasFocus(201) | ControlGroup(202).HasFocus | Control.HasFocus(203)</expression>
+    <expression name="HomeCatTVShows">Control.HasFocus(325) | Control.HasFocus(301) | ControlGroup(302).HasFocus | Control.HasFocus(303)</expression>
+    <expression name="HomeCatMusic">Control.HasFocus(425) | Control.HasFocus(401) | ControlGroup(402).HasFocus | Control.HasFocus(403)</expression>
+    <expression name="HomeCatPictures">Control.HasFocus(1025) | Control.HasFocus(1001) | ControlGroup(1002).HasFocus | Control.HasFocus(1003)</expression>
+    <expression name="HomeCatPrograms">Control.HasFocus(625) | Control.HasFocus(601)</expression>
+    <expression name="HomeCatWeather">Control.HasFocus(725) | Control.HasFocus(701)</expression>
+    <expression name="HomeCatSettings">Control.HasFocus(825) | Control.HasFocus(801)</expression>
 
     <include name="FocusPosition">
         <focusposition>$PARAM[value]</focusposition>
@@ -308,7 +318,7 @@
                     <textcolor>C0FFFFFF</textcolor>
                     <scroll>false</scroll>
                     <align>left</align>
-                    <animation effect="slide" end="0,14" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(2)">Conditional</animation>
+                    <animation effect="slide" end="0,14" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatHome]">Conditional</animation>
                 </control>
                 <control type="label">
                     <posx>115</posx>
@@ -320,7 +330,7 @@
                     <textcolor>80FFFFFF</textcolor>
                     <scroll>false</scroll>
                     <align>left</align>
-                    <visible>Container(20).HasFocus(2)</visible>
+                    <visible>$EXP[HomeCatHome]</visible>
                     <animation type="Visible">
                         <effect type="fade" start="0" end="100" time="300" tween="cubic" easing="inout" />
                         <effect type="slide" start="0,7" end="0,0" time="300" tween="cubic" easing="inout" />
@@ -487,7 +497,7 @@
                 <width>38</width>
                 <height>38</height>
                 <texture>windows/home/search.png</texture>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(1)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatSearch]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="19,50" condition="!Control.HasFocus(125)">Conditional</animation>
                 <visible>System.HasAddon(script.globalsearch)</visible>
             </control>
@@ -496,7 +506,7 @@
                 <description>Home</description>
                 <include>HomeLabel</include>
                 <label>$VAR[HomeDVDLabel]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(2)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatHome]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(525)">Conditional</animation>
             </control>
 
@@ -514,14 +524,14 @@
                     <height>38</height>
                     <texture>windows/home/submenu-arrow.png</texture>
                     <include>visiblehidefadeinfo</include>
-                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(925) + Container(20).HasFocus(9)]">Conditional</animation>
+                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(925)">Conditional</animation>
                 </control>
             </control>
             <control type="label">
                 <description>Live TV</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[31220]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(9)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatLiveTV]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(925)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeTV)</visible>
             </control>
@@ -540,14 +550,14 @@
                     <height>38</height>
                     <texture>windows/home/submenu-arrow.png</texture>
                     <include>visiblehidefadeinfo</include>
-                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(225) + Container(20).HasFocus(3)]">Conditional</animation>
+                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(225)">Conditional</animation>
                 </control>
             </control>
             <control type="label">
                 <description>Movies</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[342]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(3)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatMovies]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(225)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeMovies)</visible>
             </control>
@@ -565,14 +575,14 @@
                     <width>19</width>
                     <height>38</height>
                     <texture>windows/home/submenu-arrow.png</texture>
-                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(325) + Container(20).HasFocus(4)]">Conditional</animation>
+                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(325)">Conditional</animation>
                 </control>
             </control>
             <control type="label">
                 <description>TV Shows</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[31990]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(4)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatTVShows]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(325)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeTVShows)</visible>
             </control>
@@ -590,14 +600,14 @@
                     <width>19</width>
                     <height>38</height>
                     <texture>windows/home/submenu-arrow.png</texture>
-                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(425) + Container(20).HasFocus(5)]">Conditional</animation>
+                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(425)">Conditional</animation>
                 </control>
             </control>
             <control type="label">
                 <description>Music</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[2]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(5)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatMusic]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(425)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeMusic)</visible>
             </control>
@@ -606,7 +616,7 @@
                 <description>Pictures</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[1]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(10)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatPictures]">Conditional</animation>
                 <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(1025)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomePictures)</visible>
             </control>
@@ -615,7 +625,7 @@
                 <description>Applications</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[31504]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(6)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatPrograms]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="150" tween="sine" easing="inout" center="auto" condition="!Control.HasFocus(625)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomePrograms)</visible>
             </control>
@@ -624,7 +634,7 @@
                 <description>Weather</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[8]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(7)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatWeather]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="150" tween="sine" easing="inout" center="auto" condition="!Control.HasFocus(725)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeWeather)</visible>
             </control>
@@ -636,7 +646,7 @@
                 <width>38</width>
                 <height>38</height>
                 <texture>windows/home/settings.png</texture>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(8)">Conditional</animation>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!$EXP[HomeCatSettings]">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="19,50" condition="!Control.HasFocus(825)">Conditional</animation>
             </control>
         </control>
