@@ -507,6 +507,12 @@
                             <label>$LOCALIZE[38023]</label>
                             <onclick>SendClick(2003,7)</onclick>
                         </item>
+                        <item id="10">
+                            <description>Video Versions</description>
+                            <label>$LOCALIZE[40000]</label>
+                            <onclick>SendClick(14)</onclick>
+                            <visible>String.IsEqual(ListItem.DBType,movie)</visible>
+                        </item>
                     </content>
                 </control>
 
@@ -625,6 +631,23 @@
                             <font>Font-Condensed-S34</font>
                             <align>left</align>
                             <label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ★ ,]$INFO[ListItem.UserRating, • ★ , ($LOCALIZE[38018])]</label>
+                            <textcolor>aawhite</textcolor>
+                            <scroll>false</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <width>1044</width>
+                        <height>40</height>
+                        <visible>!String.IsEmpty(ListItem.VideoVersionName)</visible>
+                        <!-- Version -->
+                        <control type="label">
+                            <posx>8</posx>
+                            <posy>0</posy>
+                            <width>1044</width>
+                            <height>36</height>
+                            <font>Font-Condensed-S34</font>
+                            <align>left</align>
+                            <label>$LOCALIZE[40003]: $INFO[ListItem.VideoVersionName]</label>
                             <textcolor>aawhite</textcolor>
                             <scroll>false</scroll>
                         </control>

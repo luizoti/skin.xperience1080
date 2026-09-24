@@ -24,7 +24,7 @@
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),6)">plugin://plugin.video.themoviedb.helper?info=trakt_boxoffice&amp;type=movie</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),7)">plugin://plugin.video.themoviedb.helper?info=trakt_popular&amp;type=movie</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),15)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=movie</value>
-        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),16)">plugin://plugin.video.themoviedb.helper/?info=trakt_trending&amp&amp;type=tv</value>
+        <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),16)">plugin://plugin.video.themoviedb.helper?info=trakt_trending&amp;type=tv</value>
         <value condition="String.IsEqual(Skin.String(HomeWidget.1.Type),17)">$INFO[Skin.String(HomeWidget.1.Path)]</value>
     </variable>
 

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <controls>
+        <control type="group">
+            <include>KeyboardAnimations</include>
+            <visible>!Window.IsVisible(yesnodialog) + !Window.IsVisible(virtualkeyboard) + !Window.IsVisible(numericinput)</visible>
+
+            <!-- Heading -->
+            <control type="label" id="1">
+                <posx>330</posx>
+                <posy>122</posy>
+                <width>1260</width>
+                <height>40</height>
+                <font>Font-Condensed-S34</font>
+                <label></label>
+                <textcolor>ddwhite</textcolor>
+                <align>center</align>
+            </control>
+
+            <!-- Background -->
+            <control type="image">
+                <posx>330</posx>
+                <posy>156</posy>
+                <width>1260</width>
+                <height>760</height>
+                <texture border="39">dialogs/default/bg.png</texture>
+            </control>
+            <control type="image">
+                <posx>370</posx>
+                <posy>206</posy>
+                <width>1180</width>
+                <height>660</height>
+                <texture border="5">dialogs/default/inner.png</texture>
+            </control>
+
+            <!-- Poster -->
+            <control type="image">
+                <posx>390</posx>
+                <posy>226</posy>
+                <width>290</width>
+                <height>455</height>
+                <texture background="true" fallback="dialogs/select/iconsbig/DefaultAddon.png">$INFO[ListItem.Art(poster)]</texture>
+                <aspectratio aligny="top">keep</aspectratio>
+            </control>
+
+            <control type="label">
+                <description>Path</description>
+                <posx>390</posx>
+                <posy>690</posy>
+                <width>280</width>
+                <height>150</height>
+                <font>Font-Condensed-S28</font>
+                <label>$INFO[Container(50).ListItem.DecodedFileNameAndPath]</label>
+                <textcolor>99FFFFFF</textcolor>
+                <align>left</align>
+                <aligny>top</aligny>
+                <scroll>false</scroll>
+                <wrapmultiline>true</wrapmultiline>
+            </control>
+
+            <!-- Version / Extras list -->
+            <control type="group" id="100">
+                <posx>710</posx>
+                <posy>226</posy>
+                <control type="list" id="50">
+                    <description>versions/extras list</description>
+                    <width>540</width>
+                    <height>620</height>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <onleft>50</onleft>
+                    <onright>101</onright>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime tween="cubic" easing="out">200</scrolltime>
+                    <itemlayout height="60">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>1</posy>
+                            <width>540</width>
+                            <height>60</height>
+                            <texture>dialogs/default/separator.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>15</posx>
+                            <posy>0</posy>
+                            <width>510</width>
+                            <height>60</height>
+                            <info>ListItem.Label</info>
+                            <font>Font-Condensed-S32</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>FF585858</textcolor>
+                            <selectedcolor>FF585858</selectedcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="60">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>1</posy>
+                            <width>540</width>
+                            <height>60</height>
+                            <texture>dialogs/default/separator.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>15</posx>
+                            <posy>0</posy>
+                            <width>510</width>
+                            <height>60</height>
+                            <info>ListItem.Label</info>
+                            <font>Font-Condensed-S32</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>eewhite</textcolor>
+                            <selectedcolor>eewhite</selectedcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="60">
+                    <posx>556</posx>
+                    <posy>0</posy>
+                    <width>11</width>
+                    <height>620</height>
+                    <texturesliderbackground></texturesliderbackground>
+                    <texturesliderbar border="0,6,0,6">dialogs/default/scrollbar.png</texturesliderbar>
+                    <texturesliderbarfocus border="0,6,0,6">dialogs/default/scrollbar.png</texturesliderbarfocus>
+                    <textureslidernib></textureslidernib>
+                    <textureslidernibfocus></textureslidernibfocus>
+                    <onleft>50</onleft>
+                    <onright>101</onright>
+                    <showonepage>false</showonepage>
+                    <orientation>vertical</orientation>
+                </control>
+            </control>
+
+            <!-- Action buttons -->
+            <control type="grouplist" id="101">
+                <posx>1280</posx>
+                <posy>226</posy>
+                <width>250</width>
+                <height>640</height>
+                <onleft>100</onleft>
+                <itemgap>10</itemgap>
+                <scrolltime tween="quadratic">200</scrolltime>
+                <control type="button" id="21">
+                    <description>Play</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[208]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                </control>
+                <control type="button" id="22">
+                    <description>Add version</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[40014]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                    <visible>Window.IsVisible(managevideoversions)</visible>
+                </control>
+                <control type="button" id="23">
+                    <description>Add extras</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[40015]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                    <visible>Window.IsVisible(managevideoextras)</visible>
+                </control>
+                <control type="button" id="27">
+                    <description>Choose art</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[13511]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                </control>
+                <control type="button" id="24">
+                    <description>Rename version</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[40004]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                    <visible>Window.IsVisible(managevideoversions)</visible>
+                </control>
+                <control type="button" id="28">
+                    <description>Rename extra</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[118]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                    <visible>Window.IsVisible(managevideoextras)</visible>
+                </control>
+                <control type="button" id="26">
+                    <description>Remove</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[15015]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                </control>
+                <control type="button" id="29">
+                    <description>Reset default version</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[40046]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                    <visible>Window.IsVisible(managevideoversions)</visible>
+                </control>
+                <control type="button" id="25">
+                    <description>Set default</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>250</width>
+                    <height>48</height>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$LOCALIZE[40023]</label>
+                    <font>Font-Condensed-S32</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus>buttons/select-fo.png</texturefocus>
+                    <texturenofocus>buttons/select-nf.png</texturenofocus>
+                    <visible>Window.IsVisible(managevideoversions)</visible>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
