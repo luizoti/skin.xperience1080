@@ -143,5 +143,51 @@
                 </control>
             </control>
         </control>
+        <control type="group" id="10">
+            <description>Show OSD Help</description>
+            <visible>System.GetBool(gamesgeneral.showosdhelp)</visible>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>700</width>
+            <height>1040</height>
+            <animation effect="fade" time="200">VisibleChange</animation>
+            <control type="image">
+                <posx>-40</posx>
+                <posy>-40</posy>
+                <width>780</width>
+                <height>1120</height>
+                <texture border="30">windows/common/black.png</texture>
+            </control>
+            <control type="label">
+                <description>Heading</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>700</width>
+                <height>90</height>
+                <label>$LOCALIZE[35221]</label>
+                <font>Font-Condensed-S42</font>
+                <textcolor>eewhite</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="textbox" id="1101">
+                <description>Help text</description>
+                <posx>30</posx>
+                <posy>90</posy>
+                <width>640</width>
+                <height>70</height>
+                <font>Font-Condensed-S34</font>
+                <textcolor>aawhite</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="gamecontroller">
+                <posx>30</posx>
+                <posy>160</posy>
+                <width>640</width>
+                <height>640</height>
+                <controllerid>game.controller.snes</controllerid>
+            </control>
+        </control>
     </controls>
 </window>
