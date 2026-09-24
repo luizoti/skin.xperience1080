@@ -31,7 +31,7 @@
                 <animation condition="[Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]" easing="inout" effect="slide" end="0,-70" start="0,0" time="300" tween="cubic">Conditional</animation>
                 <!-- Progress Bar Background -->
                 <control type="image">
-                    <visible>Control.IsVisible(999)</visible>
+                    <visible>Control.IsVisible(999) + !Control.IsVisible(983)</visible>
                     <posx>0</posx>
                     <posy>600</posy>
                     <width>1920</width>
@@ -42,7 +42,7 @@
                 <control type="group" id="999">
                     <animation condition="[Player.ShowInfo | Window.IsVisible(fullscreeninfo)] + [!Window.IsActive(videoosd) + !Window.IsActive(musicosd) + !Window.IsActive(gameosd)]" easing="inout" effect="slide" end="0,213" start="0,0" time="300" tween="cubic">Conditional</animation>
                     <animation condition="Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)" easing="inout" effect="slide" end="0,70" start="0,0" time="300" tween="cubic">Conditional</animation>
-                    <visible>Skin.HasSetting(PauseOsd) + String.IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)</visible>
+                    <visible>!Skin.HasSetting(PauseOsd) + String.IsEmpty(Window.Property(ExtendPlot)) | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(gameosd)</visible>
                     <include>visiblehidefadeinfo</include>
                     <control type="group">
                         <posx>358</posx>
