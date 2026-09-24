@@ -506,7 +506,7 @@
                                 <posy>83</posy>
                                 <width>1140</width>
                                 <height>56</height>
-                                <label>$INFO[VideoPlayer.Title]</label>
+                                <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.VideoVersionName, [COLOR 88FFFFFF][,][/COLOR]]</label>
                                 <textcolor>bbwhite</textcolor>
                                 <font>Font-Condensed-S50-B</font>
                                 <align>left</align>
@@ -576,7 +576,7 @@
                                 <posy>83</posy>
                                 <width>1140</width>
                                 <height>56</height>
-                                <label>$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.Title]</label>
+                                <label>$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.VideoVersionName, [COLOR 88FFFFFF][,][/COLOR]]</label>
                                 <textcolor>bbwhite</textcolor>
                                 <font>Font-Condensed-S50-B</font>
                                 <align>left</align>
@@ -683,7 +683,7 @@
                                 <posy>83</posy>
                                 <width>1140</width>
                                 <height>56</height>
-                                <label>$INFO[VideoPlayer.Title]</label>
+                                <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.VideoVersionName, [COLOR 88FFFFFF][,][/COLOR]]</label>
                                 <textcolor>bbwhite</textcolor>
                                 <font>Font-Condensed-S50-B</font>
                                 <align>left</align>

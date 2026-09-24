@@ -30,7 +30,7 @@
         </control>
         <control type="button" id="1">
             <description>Jump to time</description>
-            <visible>!String.IsEmpty(Player.SeekNumeric)</visible>
+            <visible>!String.IsEmpty(Player.SeekNumeric) + !Player.IsExternal + !Player.IsRemote</visible>
             <posx>45</posx>
             <posy>0</posy>
             <width>305</width>

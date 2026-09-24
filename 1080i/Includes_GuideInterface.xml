@@ -1140,6 +1140,7 @@
             <item id="2">
                 <label>rewind</label>
                 <onclick>PlayerControl(Rewind)</onclick>
+                <visible>!Player.IsExternal + !Player.IsRemote</visible>
             </item>
             <item id="3">
                 <label>stop</label>
@@ -1159,6 +1160,7 @@
             <item id="6">
                 <label>forward</label>
                 <onclick>PlayerControl(Forward)</onclick>
+                <visible>!Player.IsExternal + !Player.IsRemote</visible>
             </item>
             <item id="7">
                 <label>next</label>
