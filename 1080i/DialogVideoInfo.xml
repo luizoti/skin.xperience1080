@@ -444,7 +444,7 @@
                             <description>Play</description>
                             <label>$LOCALIZE[31315]</label>
                             <onclick>SendClick(2003,8)</onclick>
-                            <visible>Container.Content(files) | Container.Content(songs) | Container.Content(episodes) | Container.Content(videos) | [Container.Content(movies) + !System.HasAddon(script.cinema.experience)]</visible>
+                            <visible>Container.Content(files) | Container.Content(songs) | Container.Content(episodes) | Container.Content(videos) | Container.Content(movies)</visible>
                         </item>
                         <item id="2">
                             <description>Play</description>
@@ -453,13 +453,9 @@
                             <visible>Container.Content(seasons) | Container.Content(tvshows)</visible>
                         </item>
                         <item id="3">
-                            <description>Playback Options</description>
-                            <label>$LOCALIZE[14086]</label>
-                            <onclick>SetProperty(Dialog.1.Label,$LOCALIZE[31315])</onclick>
-                            <onclick>SetProperty(Dialog.1.BuiltIn,SendClick(2003,8))</onclick>
-                            <onclick>SetProperty(Dialog.2.Label,$LOCALIZE[31001])</onclick>
-                            <onclick>SetProperty(Dialog.2.BuiltIn,RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])||Dialog.Close(MovieInformation))</onclick>
-                            <onclick>RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[14086])</onclick>
+                            <description>Cinema Experience</description>
+                            <label>$LOCALIZE[31001]</label>
+                            <onclick>RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])||Dialog.Close(MovieInformation)</onclick>
                             <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
                         </item>
                         <item id="4">
