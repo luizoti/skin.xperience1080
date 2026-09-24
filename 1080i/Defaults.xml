@@ -166,7 +166,9 @@
         <height>15</height>
         <orientation>horizontal</orientation>
         <texturesliderbar></texturesliderbar>
+        <texturesliderbardisabled colordiffuse="disabled"></texturesliderbardisabled>
         <textureslidernib></textureslidernib>
         <textureslidernibfocus></textureslidernibfocus>
+        <textureslidernibdisabled colordiffuse="disabled"></textureslidernibdisabled>
     </default>
 </includes>

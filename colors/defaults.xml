@@ -37,6 +37,7 @@
         <color name="bbwhite">BBFFFFFF</color>  
         <color name="ddwhite">DDFFFFFF</color>  
         <color name="eewhite">EEFFFFFF</color>
+        <color name="disabled">40FFFFFF</color>
 
         <!-- Menus -->
         <color name="MenuBlue">FF55B2FA</color>

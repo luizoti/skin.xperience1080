@@ -50,8 +50,10 @@
                     <width>300</width>
                     <height>35</height>
                     <texturesliderbar border="22,1,22,1">buttons/OSD/slider_back.png</texturesliderbar>
+                    <texturesliderbardisabled border="22,1,22,1" colordiffuse="disabled">buttons/OSD/slider_back.png</texturesliderbardisabled>
                     <textureslidernib>buttons/OSD/orb_nofo.png</textureslidernib>
                     <textureslidernibfocus>buttons/OSD/orb_fo.png</textureslidernibfocus>
+                    <textureslidernibdisabled colordiffuse="disabled">buttons/OSD/orb_nofo.png</textureslidernibdisabled>
                     <onup>11</onup>
                     <ondown>11</ondown>
                     <onleft>11</onleft>

@@ -170,6 +170,8 @@
                 <width>774</width>
                 <height>18</height>
                 <action>seek</action>
+                <texturesliderbardisabled></texturesliderbardisabled>
+                <textureslidernibdisabled></textureslidernibdisabled>
             </control>
             <control type="image">
                 <description>separator</description>
