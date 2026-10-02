@@ -1,0 +1,37 @@
+name: strings
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    paths:
+      - "1080i/**"
+      - "language/**"
+      - "tools/sync_strings.py"
+      - ".github/workflows/strings.yml"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Todo ID $LOCALIZE[] referenciado pelos XML precisa existir no master en_gb,
+      # e en_gb/en_us/pt_br precisam estar em ordem crescente, sem msgstr vazio
+      # fora do master e sem msgid divergente.
+      - name: sync_strings --check
+        run: python3 tools/sync_strings.py --check
+
+      - name: msgfmt
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gettext
+          for lang in en_gb en_us pt_br; do
+            echo "::group::$lang"
+            msgfmt --check -o /dev/null "language/resource.language.$lang/strings.po"
+            echo "::endgroup::"
+          done

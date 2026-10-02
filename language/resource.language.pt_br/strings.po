@@ -16,9 +16,34 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+
+msgctxt "#31000"
+msgid "Known Movies"
+msgstr "Filmes Conhecidos"
+
 msgctxt "#31001"
 msgid "Cinema Experience"
 msgstr "Cinema Experience"
+
+msgctxt "#31002"
+msgid "Checking for"
+msgstr "Verificando"
+
+msgctxt "#31003"
+msgid "Checking for updates"
+msgstr "Verificando atualizações"
+
+msgctxt "#31004"
+msgid "Known TV Shows"
+msgstr "Séries Conhecidas"
+
+msgctxt "#31005"
+msgid "Known Movie Roles"
+msgstr "Papéis de Filmes Conhecidos"
+
+msgctxt "#31006"
+msgid "Known TV Roles"
+msgstr "Papéis de Séries Conhecidos"
 
 msgctxt "#31007"
 msgid "Age"
@@ -44,6 +69,10 @@ msgctxt "#31012"
 msgid "Artwork"
 msgstr "Artwork"
 
+msgctxt "#31013"
+msgid "Loading PVR Channels..."
+msgstr "Carregando Canais PVR..."
+
 msgctxt "#31014"
 msgid "Radio Stations"
 msgstr "Estações de Rádio"
@@ -56,6 +85,26 @@ msgctxt "#31016"
 msgid "TV Crew"
 msgstr "Produção de TV"
 
+msgctxt "#31017"
+msgid "TV Show Roles"
+msgstr "Papéis de Séries de TV"
+
+msgctxt "#31018"
+msgid "TV Show Crew"
+msgstr "Elenco de Séries de TV"
+
+msgctxt "#31019"
+msgid "Trakt Options"
+msgstr "Opções do Trakt"
+
+msgctxt "#31020"
+msgid "Airing Now & Next"
+msgstr "No Ar e a Seguir"
+
+msgctxt "#31021"
+msgid "Frame"
+msgstr "Quadro"
+
 msgctxt "#31022"
 msgid "Video Extras"
 msgstr "Vídeos Extras"
@@ -63,6 +112,14 @@ msgstr "Vídeos Extras"
 msgctxt "#31023"
 msgid "Extras"
 msgstr "Extras"
+
+msgctxt "#31024"
+msgid "Reset Skin Settings"
+msgstr "Redefinir Configurações de Tema"
+
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "AVISO: Isso Redefinirá TODAS as Configurações do Tema"
 
 msgctxt "#31026"
 msgid "Germany"
@@ -72,25 +129,85 @@ msgctxt "#31027"
 msgid "Italy"
 msgstr "Itália"
 
+msgctxt "#31028"
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
 msgctxt "#31029"
 msgid "United States"
 msgstr "Estados Unidos"
+
+msgctxt "#31030"
+msgid "Hide Clock"
+msgstr "Ocultar Relógio"
+
+msgctxt "#31031"
+msgid "Hide Chapter Information"
+msgstr "Ocultar Informação de Capítulos"
+
+msgctxt "#31032"
+msgid "Pictures Tile"
+msgstr "Bloco de Imagens"
+
+msgctxt "#31033"
+msgid "XKCD.com"
+msgstr "XKCD.com"
+
+msgctxt "#31034"
+msgid "Cyanide & Happiness"
+msgstr "Cyanide & Happiness"
 
 msgctxt "#31035"
 msgid "Daily Babes"
 msgstr "Daily Babes"
 
+msgctxt "#31036"
+msgid "MyPicsDB"
+msgstr "MyPicsDB"
+
 msgctxt "#31037"
 msgid "Photos"
 msgstr "Fotos"
 
-msgctxt "#31100"
-msgid "General"
-msgstr "Geral"
+msgctxt "#31038"
+msgid "Path to Pictures"
+msgstr "Caminho para Imagens"
 
-msgctxt "#31101"
-msgid "Enable Kiosk Mode"
-msgstr "Modo quiosque"
+msgctxt "#31039"
+msgid "Pictures Tiles (Purple)"
+msgstr "Blocos de Imagens (Roxo)"
+
+msgctxt "#31040"
+msgid "Reset Pictures Path"
+msgstr "Redefinir Caminho das Imagens"
+
+msgctxt "#31045"
+msgid "Display Volume in dB"
+msgstr "Mostar Volume em dB"
+
+msgctxt "#31046"
+msgid "Random Albums"
+msgstr "Álbuns Aleatórios"
+
+msgctxt "#31047"
+msgid "Recent Albums"
+msgstr "Álbuns Recentes"
+
+msgctxt "#31048"
+msgid "Recommended Albums"
+msgstr "Álbuns Recomendados"
+
+msgctxt "#31049"
+msgid "Random Songs"
+msgstr "Músicas Aleatórias"
+
+msgctxt "#31050"
+msgid "Set Picture Path"
+msgstr "Definir Caminho das Imagens"
+
+msgctxt "#31051"
+msgid "Custom Image Path"
+msgstr "Caminho de Imagem Personalizado"
 
 msgctxt "#31092"
 msgid "Hide information Season/EP"
@@ -108,6 +225,14 @@ msgctxt "#31095"
 msgid "Pause OSD Delay (2 Sec)"
 msgstr "Atraso no OSD de Pausa (2 Sec)"
 
+msgctxt "#31100"
+msgid "General"
+msgstr "Geral"
+
+msgctxt "#31101"
+msgid "Enable Kiosk Mode"
+msgstr "Modo quiosque"
+
 msgctxt "#31102"
 msgid "Display Now Playing Video in Background"
 msgstr "Mostrar vídeo em reprodução no fundo"
@@ -124,6 +249,10 @@ msgctxt "#31105"
 msgid "Animate Artist Slideshow"
 msgstr "Animar apresentação de slides de artista"
 
+msgctxt "#31106"
+msgid "Display Fanart above Visualisation"
+msgstr "Exibir Fanart acima da Visualização"
+
 msgctxt "#31108"
 msgid "Automatically switch to music visualisation upon Play"
 msgstr "Mudar automaticamente p/ visualização de música ao reproduzir"
@@ -131,6 +260,14 @@ msgstr "Mudar automaticamente p/ visualização de música ao reproduzir"
 msgctxt "#31109"
 msgid "Enable Auto Scrolling for text"
 msgstr "Ativar auto rolagem para texto"
+
+msgctxt "#31110"
+msgid "Enable Playlist At Startup"
+msgstr "Ativar Lista De Reprodução Durante a Inicialização"
+
+msgctxt "#31111"
+msgid "Skin"
+msgstr "Skin"
 
 msgctxt "#31112"
 msgid "Invert Spin Control"
@@ -144,9 +281,45 @@ msgctxt "#31114"
 msgid "Bottom"
 msgstr "Fundo"
 
+msgctxt "#31115"
+msgid "Skip back"
+msgstr "Retroceder"
+
+msgctxt "#31116"
+msgid "Skip forward"
+msgstr "Avançar"
+
+msgctxt "#31117"
+msgid "Previous channel"
+msgstr "Canal anterior"
+
+msgctxt "#31118"
+msgid "Next channel"
+msgstr "Próximo canal"
+
+msgctxt "#31119"
+msgid "Fast rewind"
+msgstr "Retroceder rápido"
+
+msgctxt "#31120"
+msgid "Fast forward"
+msgstr "Avançar rápido"
+
+msgctxt "#31121"
+msgid "Channel list"
+msgstr "Lista de canais"
+
+msgctxt "#31122"
+msgid "Visualisation settings"
+msgstr "Configurações da visualização"
+
 msgctxt "#31130"
 msgid "Home"
 msgstr "Início"
+
+msgctxt "#31131"
+msgid "Manage Home Categories"
+msgstr "Gerenciar Categorias da Tela Inicial"
 
 msgctxt "#31134"
 msgid "Display Profile Image"
@@ -187,6 +360,10 @@ msgstr "Caminho"
 msgctxt "#31143"
 msgid "Recommended size 633x437px"
 msgstr "Tamanho recomendado de 633x437px"
+
+msgctxt "#31144"
+msgid "Show Coloured Home Tiles"
+msgstr "Mostrar Blocos Coloridos Na Tela Inicial"
 
 msgctxt "#31145"
 msgid "Video add-on"
@@ -316,12 +493,20 @@ msgctxt "#31193"
 msgid "Select Motion Picture Rating country"
 msgstr "Seleciona o país da classificação indicativa para o filme"
 
+msgctxt "#31200"
+msgid "Display Power Button (does not affect home screen)"
+msgstr "Exibir Botão de Liga/Desliga (não afeta a tela inicial)"
+
+msgctxt "#31202"
+msgid "Play Trailer on opening Movie Information"
+msgstr "Reproduzir Trailer ao Abrir Informações do Filme"
+
 msgctxt "#31203"
 msgid "Play Trailer minimized"
 msgstr "Reproduzir trailer minimizado"
 
 msgctxt "#31220"
-msgid "Live TV"
+msgid "TV"
 msgstr "TV ao Vivo"
 
 msgctxt "#31221"
@@ -356,6 +541,22 @@ msgctxt "#31271"
 msgid "Display Profile Image"
 msgstr "Exibir avatar do perfil"
 
+msgctxt "#31272"
+msgid "Replace Pictures with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Imagens por Item de Menu Personalizado na Navegação Rápida"
+
+msgctxt "#31273"
+msgid "Replace Trailer with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Trailer por Item de Menu Personalizado na Navegação Rápida"
+
+msgctxt "#31274"
+msgid "Replace New Movies with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Novos Filmes por Item de Menu Personalizado na Navegação Rápida"
+
+msgctxt "#31275"
+msgid "Replace New TV Shows with Custom Menu Item in Quick Navigation"
+msgstr "Substituir Novos Programas de TV Por Item de Menu Personalizado na Navegação Rápida"
+
 msgctxt "#31276"
 msgid "Choose Custom Menu Item"
 msgstr "Selecionar o item personalizado"
@@ -384,6 +585,10 @@ msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "Atualizar arte (poster, paisagem, fanart, etc.) após atualizar banco de dados"
 
+msgctxt "#31295"
+msgid "Hide Weather"
+msgstr "Ocultar Clima"
+
 msgctxt "#31303"
 msgid "Tracks"
 msgstr "Faixas"
@@ -407,6 +612,10 @@ msgstr "Atualizar"
 msgctxt "#31311"
 msgid "Unwatched Episodes: "
 msgstr "Episódios não-assistidos: "
+
+msgctxt "#31314"
+msgid "First Aired: "
+msgstr "Primeira exibição: "
 
 msgctxt "#31315"
 msgid "Play"
@@ -552,6 +761,10 @@ msgctxt "#31459"
 msgid "Kodi Version"
 msgstr "Versão do Kodi"
 
+msgctxt "#31460"
+msgid "Quick Navigation"
+msgstr "Navegação Rápida"
+
 msgctxt "#31504"
 msgid "Applications"
 msgstr "Aplicativos"
@@ -577,8 +790,8 @@ msgid "Spotlight"
 msgstr "Em Foco"
 
 msgctxt "#31551"
-msgid "Ongoing TV Shows"
-msgstr "Próximos Episódios"
+msgid "Ongoing Episodes"
+msgstr "Em Andamento"
 
 msgctxt "#31552"
 msgid "New Movies"
@@ -660,6 +873,10 @@ msgctxt "#31695"
 msgid "10 Day Forecast"
 msgstr "Previsão de 10 Dias"
 
+msgctxt "#31696"
+msgid "24 Hours in Detail"
+msgstr "24 Horas em Detalhe"
+
 msgctxt "#31716"
 msgid "Playlist Options"
 msgstr "Opções de Lista de Reprodução"
@@ -683,6 +900,18 @@ msgstr "Página"
 msgctxt "#31822"
 msgid "Item"
 msgstr "Item"
+
+msgctxt "#31900"
+msgid "Player information"
+msgstr "Informações do Reprodutor"
+
+msgctxt "#31901"
+msgid "Video decoder"
+msgstr "Decodificador de vídeo"
+
+msgctxt "#31902"
+msgid "Pixel format"
+msgstr "Formato de pixel"
 
 msgctxt "#31920"
 msgid "Recently Added"
@@ -816,6 +1045,10 @@ msgctxt "#31952"
 msgid "Please Disable"
 msgstr "Por favor, desabilite"
 
+msgctxt "#31953"
+msgid "Edit Movie"
+msgstr "Editar Filme"
+
 msgctxt "#31954"
 msgid "Edit Tv Show"
 msgstr "Editar Série de TV"
@@ -909,24 +1142,8 @@ msgid "Display Weather"
 msgstr "Exibir clima"
 
 msgctxt "#31977"
-msgid "No Media Source available"
+msgid "No Content available"
 msgstr "Nenhuma fonte de mídia disponível"
-
-msgctxt "#31978"
-msgid "Home Tiles (Red)"
-msgstr "Paíneis de Início (Vermelho)"
-
-msgctxt "#31979"
-msgid "Movie Tiles (Blue)"
-msgstr "Paíneis de Filme (Azul)"
-
-msgctxt "#31980"
-msgid "TV Show Tiles (Green)"
-msgstr "Paíneis de Séries de TV (Verde)"
-
-msgctxt "#31981"
-msgid "Music Tiles (Orange)"
-msgstr "Paíneis de Música (Laranja)"
 
 msgctxt "#31982"
 msgid "All Options"
@@ -976,10 +1193,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Login Automático"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Exibir setas de navegação na tela inicial"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Selecionar plano de fundo personalizado"
@@ -987,72 +1200,3 @@ msgstr "Selecionar plano de fundo personalizado"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Ocultar data"
-
-msgctxt "#31996"
-msgid "Hide Date"
-msgstr "Ocultar data"
-
-
-msgctxt "#31031"
-msgid "Hide Chapter Information"
-msgstr "Ocultar Informação de Capítulos"
-
-msgctxt "#31030"
-msgid "Hide Clock"
-msgstr "Ocultar Relógio"
-
-msgctxt "#31295"
-msgid "Hide Weather"
-msgstr "Ocultar Clima"
-
-msgctxt "#31033"
-msgid "XKCD.com"
-msgstr "XKCD.com"
-
-msgctxt "#31045"
-msgid "Display Volume in dB"
-msgstr "Mostar Volume em dB"
-
-msgctxt "#31131"
-msgid "Manage Home Categories"
-msgstr "Gerenciar Categorias da Tela Inicial"
-
-msgctxt "#31202"
-msgid "Play Trailer on opening Movie Information"
-msgstr "Reproduzir Trailer ao Abrir Informações do Filme"
-
-msgctxt "#31460"
-msgid "Quick Navigation"
-msgstr "Navegação Rápida"
-
-msgctxt "#31272"
-msgid "Replace Pictures with Custom Menu Item in Quick Navigation"
-msgstr "Substituir Imagens por Item de Menu Personalizado na Navegação Rápida"
-
-msgctxt "#31273"
-msgid "Replace Trailer with Custom Menu Item in Quick Navigation"
-msgstr "Substituir Trailer por Item de Menu Personalizado na Navegação Rápida"
-
-msgctxt "#31274"
-msgid "Replace New Movies with Custom Menu Item in Quick Navigation"
-msgstr "Substituir Novos Filmes por Item de Menu Personalizado na Navegação Rápida"
-
-msgctxt "#31275"
-msgid "Replace New TV Shows with Custom Menu Item in Quick Navigation"
-msgstr "Substituir Novos Programas de TV Por Item de Menu Personalizado na Navegação Rápida"
-
-msgctxt "#31024"
-msgid "Reset Skin Settings"
-msgstr "Redefinir Configurações de Tema"
-
-msgctxt "#31025"
-msgid "WARNING: This Will Reset ALL Skin Settings"
-msgstr "AVISO: Isso Redefinirá TODAS as Configurações do Tema"
-
-msgctxt "#31110"
-msgid "Enable Playlist At Startup"
-msgstr "Ativar Lista De Reprodução Durante a Inicialização"
-
-msgctxt "#31144"
-msgid "Show Coloured Home Tiles"
-msgstr "Mostrar Blocos Coloridos Na Tela Inicial"

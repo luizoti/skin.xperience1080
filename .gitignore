@@ -8,3 +8,6 @@ Thumbs.db
 1080i/script-skinshortcuts-includes.xml
 /.idea/
 .vscode/
+
+__pycache__/
+*.py[cod]

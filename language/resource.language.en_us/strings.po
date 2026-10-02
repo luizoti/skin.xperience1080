@@ -16,6 +16,7 @@ msgstr ""
 "Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+
 msgctxt "#31000"
 msgid "Known Movies"
 msgstr "Known Movies"
@@ -116,6 +117,10 @@ msgctxt "#31024"
 msgid "Reset Skin Settings"
 msgstr "Reset Skin Settings"
 
+msgctxt "#31025"
+msgid "WARNING: This Will Reset ALL Skin Settings"
+msgstr "WARNING: This Will Reset ALL Skin Settings"
+
 msgctxt "#31026"
 msgid "Germany"
 msgstr "Germany"
@@ -135,10 +140,6 @@ msgstr "United States"
 msgctxt "#31030"
 msgid "Hide Clock"
 msgstr "Hide Clock"
-
-msgctxt "#31295"
-msgid "Hide Weather"
-msgstr "Hide Weather"
 
 msgctxt "#31031"
 msgid "Hide Chapter Information"
@@ -184,6 +185,46 @@ msgctxt "#31045"
 msgid "Display Volume in dB"
 msgstr "Display Volume in dB"
 
+msgctxt "#31046"
+msgid "Random Albums"
+msgstr "Random Albums"
+
+msgctxt "#31047"
+msgid "Recent Albums"
+msgstr "Recent Albums"
+
+msgctxt "#31048"
+msgid "Recommended Albums"
+msgstr "Recommended Albums"
+
+msgctxt "#31049"
+msgid "Random Songs"
+msgstr "Random Songs"
+
+msgctxt "#31050"
+msgid "Set Picture Path"
+msgstr "Set Picture Path"
+
+msgctxt "#31051"
+msgid "Custom Image Path"
+msgstr "Custom Image Path"
+
+msgctxt "#31092"
+msgid "Hide information Season/EP"
+msgstr "Hide information Season/EP"
+
+msgctxt "#31093"
+msgid "Hide OSD on Seeking"
+msgstr "Hide OSD on Seeking"
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr "Hide Progress Bar"
+
+msgctxt "#31095"
+msgid "Pause OSD Delay (2 Sec)"
+msgstr "Pause OSD Delay (2 Sec)"
+
 msgctxt "#31100"
 msgid "General"
 msgstr "General"
@@ -220,6 +261,14 @@ msgctxt "#31109"
 msgid "Enable Auto Scrolling for text"
 msgstr "Enable Auto Scrolling for text"
 
+msgctxt "#31110"
+msgid "Enable Playlist At Startup"
+msgstr "Enable Playlist At Startup"
+
+msgctxt "#31111"
+msgid "Skin"
+msgstr "Skin"
+
 msgctxt "#31112"
 msgid "Invert Spin Control"
 msgstr "Invert Spin Control"
@@ -232,9 +281,37 @@ msgctxt "#31114"
 msgid "Bottom"
 msgstr "Bottom"
 
-msgctxt "#31129"
-msgid "Use Classic Home"
-msgstr "Use Classic Home"
+msgctxt "#31115"
+msgid "Skip back"
+msgstr "Skip back"
+
+msgctxt "#31116"
+msgid "Skip forward"
+msgstr "Skip forward"
+
+msgctxt "#31117"
+msgid "Previous channel"
+msgstr "Previous channel"
+
+msgctxt "#31118"
+msgid "Next channel"
+msgstr "Next channel"
+
+msgctxt "#31119"
+msgid "Fast rewind"
+msgstr "Fast rewind"
+
+msgctxt "#31120"
+msgid "Fast forward"
+msgstr "Fast forward"
+
+msgctxt "#31121"
+msgid "Channel list"
+msgstr "Channel list"
+
+msgctxt "#31122"
+msgid "Visualisation settings"
+msgstr "Visualization settings"
 
 msgctxt "#31130"
 msgid "Home"
@@ -429,7 +506,7 @@ msgid "Play Trailer minimized"
 msgstr "Play Trailer minimized"
 
 msgctxt "#31220"
-msgid "Live TV"
+msgid "TV"
 msgstr "Live TV"
 
 msgctxt "#31221"
@@ -507,6 +584,10 @@ msgstr "Update Next Aired data on Start"
 msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
+
+msgctxt "#31295"
+msgid "Hide Weather"
+msgstr "Hide Weather"
 
 msgctxt "#31303"
 msgid "Tracks"
@@ -820,9 +901,21 @@ msgctxt "#31822"
 msgid "Item"
 msgstr "Item"
 
+msgctxt "#31900"
+msgid "Player information"
+msgstr "Player information"
+
+msgctxt "#31901"
+msgid "Video decoder"
+msgstr "Video decoder"
+
+msgctxt "#31902"
+msgid "Pixel format"
+msgstr "Pixel format"
+
 msgctxt "#31920"
 msgid "Recently Added"
-msgstr "Añadido Recientemente"
+msgstr "Recently Added"
 
 msgctxt "#31921"
 msgid "Select"
@@ -1049,7 +1142,7 @@ msgid "Display Weather"
 msgstr "Display Weather"
 
 msgctxt "#31977"
-msgid "No Media Source available"
+msgid "No Content available"
 msgstr "No Media Source available"
 
 msgctxt "#31982"
@@ -1100,10 +1193,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr "Auto Login"
 
-msgctxt "#31994"
-msgid "Display Navigation Arrow"
-msgstr "Display Navigation Arrow"
-
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr "Set Custom Overlay"
@@ -1111,15 +1200,3 @@ msgstr "Set Custom Overlay"
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr "Hide Date"
-
-msgctxt "#31110"
-msgid "Enable Playlist At Startup"
-msgstr "Enable Playlist At Startup"
-
-msgctxt "#31025"
-msgid "WARNING: This Will Reset ALL Skin Settings"
-msgstr "WARNING: This Will Reset ALL Skin Settings"
-
-msgctxt "#31094"
-msgid "Hide Progress Bar"
-msgstr "Ocultar o Barra de Progresso"
