@@ -2,7 +2,8 @@
 # https://github.com/xperience1080/skin.xperience1080
 #
 msgid ""
-msgstr "Project-Id-Version: Xperience1080 7.x\n"
+msgstr ""
+"Project-Id-Version: Xperience1080\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
@@ -12,7 +13,7 @@ msgstr "Project-Id-Version: Xperience1080 7.x\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "Language: en\n"
-""
+
 
 msgctxt "#31000"
 msgid "Known Movies"
@@ -116,7 +117,7 @@ msgstr ""
 
 msgctxt "#31025"
 msgid "WARNING: This Will Reset ALL Skin Settings"
-msgstr "WARNING: This Will Reset ALL Skin Settings"
+msgstr ""
 
 msgctxt "#31026"
 msgid "Germany"
@@ -136,11 +137,7 @@ msgstr ""
 
 msgctxt "#31030"
 msgid "Hide Clock"
-msgstr "Hide Clock"
-
-msgctxt "#31295"
-msgid "Hide Weather"
-msgstr "Hide Weather"
+msgstr ""
 
 msgctxt "#31031"
 msgid "Hide Chapter Information"
@@ -152,7 +149,7 @@ msgstr ""
 
 msgctxt "#31033"
 msgid "XKCD.com"
-msgstr "XKCD.com"
+msgstr ""
 
 msgctxt "#31034"
 msgid "Cyanide & Happiness"
@@ -182,7 +179,6 @@ msgctxt "#31040"
 msgid "Reset Pictures Path"
 msgstr ""
 
-# empty string from id 31041 to 31044
 msgctxt "#31045"
 msgid "Display Volume in dB"
 msgstr ""
@@ -211,7 +207,22 @@ msgctxt "#31051"
 msgid "Custom Image Path"
 msgstr ""
 
-# empty string from id 31051 to 31099
+msgctxt "#31092"
+msgid "Hide information Season/EP"
+msgstr ""
+
+msgctxt "#31093"
+msgid "Hide OSD on Seeking"
+msgstr ""
+
+msgctxt "#31094"
+msgid "Hide Progress Bar"
+msgstr ""
+
+msgctxt "#31095"
+msgid "Pause OSD Delay (2 Sec)"
+msgstr ""
+
 msgctxt "#31100"
 msgid "General"
 msgstr ""
@@ -250,7 +261,7 @@ msgstr ""
 
 msgctxt "#31110"
 msgid "Enable Playlist At Startup"
-msgstr "Enable Playlist At Startup"
+msgstr ""
 
 msgctxt "#31111"
 msgid "Skin"
@@ -300,7 +311,6 @@ msgctxt "#31122"
 msgid "Visualisation settings"
 msgstr ""
 
-# empty strings from id 31123 to 31129
 msgctxt "#31130"
 msgid "Home"
 msgstr ""
@@ -309,7 +319,6 @@ msgctxt "#31131"
 msgid "Manage Home Categories"
 msgstr ""
 
-# empty strings from id 31132 to 31133
 msgctxt "#31134"
 msgid "Display Profile Image"
 msgstr ""
@@ -352,7 +361,7 @@ msgstr ""
 
 msgctxt "#31144"
 msgid "Show Coloured Home Tiles"
-msgstr "Show Colored Home Tiles"
+msgstr ""
 
 msgctxt "#31145"
 msgid "Video add-on"
@@ -394,7 +403,6 @@ msgctxt "#31154"
 msgid "Recommended size 283x283px"
 msgstr ""
 
-# empty string with id 31155
 msgctxt "#31156"
 msgid "Show Name"
 msgstr ""
@@ -423,7 +431,6 @@ msgctxt "#31162"
 msgid "Widget"
 msgstr ""
 
-# empty string with id 31163
 msgctxt "#31164"
 msgid "Random Items"
 msgstr ""
@@ -436,7 +443,6 @@ msgctxt "#31166"
 msgid "Only Partially Watched items"
 msgstr ""
 
-# empty string with id 31167
 msgctxt "#31168"
 msgid "Manage custom Home Widget"
 msgstr ""
@@ -469,7 +475,6 @@ msgctxt "#31175"
 msgid "Home Tile"
 msgstr ""
 
-# empty strings from id 31176 to 31189
 msgctxt "#31190"
 msgid "Views"
 msgstr ""
@@ -486,12 +491,10 @@ msgctxt "#31193"
 msgid "Select Motion Picture Rating country"
 msgstr ""
 
-# empty strings from id 31194 to 31199
 msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr ""
 
-# empty string with id 31201
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
 msgstr ""
@@ -500,7 +503,6 @@ msgctxt "#31203"
 msgid "Play Trailer minimized"
 msgstr ""
 
-# empty strings from id 31203 to 31219
 msgctxt "#31220"
 msgid "TV"
 msgstr ""
@@ -513,12 +515,10 @@ msgctxt "#31222"
 msgid "Advanced"
 msgstr ""
 
-# empty strings from id 31223 to 31239
 msgctxt "#31240"
 msgid "Enable Music Visualisation"
 msgstr ""
 
-# empty strings from id 31241 to 31249
 msgctxt "#31250"
 msgid "Backgrounds"
 msgstr ""
@@ -535,7 +535,6 @@ msgctxt "#31253"
 msgid "Multiple Image"
 msgstr ""
 
-# empty strings from id 31254 to 31270
 msgctxt "#31271"
 msgid "Display Profile Image"
 msgstr ""
@@ -560,12 +559,10 @@ msgctxt "#31276"
 msgid "Choose Custom Menu Item"
 msgstr ""
 
-# empty strings from id 31276 to 31279
 msgctxt "#31280"
 msgid "Add-ons"
 msgstr ""
 
-# empty string with id 31281
 msgctxt "#31282"
 msgid "Lyrics add-on"
 msgstr ""
@@ -578,7 +575,6 @@ msgctxt "#31284"
 msgid "Download theme songs"
 msgstr ""
 
-# empty strings from id 31291 to 31292
 msgctxt "#31293"
 msgid "Update Next Aired data on Start"
 msgstr ""
@@ -587,7 +583,10 @@ msgctxt "#31294"
 msgid "Update Art (Poster, Landscape, Fanart etc.) after Library Update"
 msgstr ""
 
-# empty strings from id 31295 to 31302
+msgctxt "#31295"
+msgid "Hide Weather"
+msgstr ""
+
 msgctxt "#31303"
 msgid "Tracks"
 msgstr ""
@@ -608,12 +607,10 @@ msgctxt "#31307"
 msgid "Refresh"
 msgstr ""
 
-# empty strings from id 31308 to 31310
 msgctxt "#31311"
 msgid "Unwatched Episodes: "
 msgstr ""
 
-# empty strings from id 31312 to 31313
 msgctxt "#31314"
 msgid "First Aired: "
 msgstr ""
@@ -626,12 +623,10 @@ msgctxt "#31316"
 msgid "Cast"
 msgstr ""
 
-# empty strings from id 31317 to 31318
 msgctxt "#31319"
 msgid "Plot"
 msgstr ""
 
-# empty strings from id 31320 to 31323
 msgctxt "#31324"
 msgid "Biography"
 msgstr ""
@@ -648,7 +643,6 @@ msgctxt "#31327"
 msgid "Year of Release"
 msgstr ""
 
-# empty string with id 31328
 msgctxt "#31329"
 msgid "No Biography for this actor"
 msgstr ""
@@ -661,12 +655,10 @@ msgctxt "#31331"
 msgid "Released"
 msgstr ""
 
-# empty string with id 31332
 msgctxt "#31333"
 msgid "Get Theme"
 msgstr ""
 
-# empty strings from id 31334 to 31350
 msgctxt "#31351"
 msgid "Logout"
 msgstr ""
@@ -675,7 +667,6 @@ msgctxt "#31352"
 msgid "Reload Skin"
 msgstr ""
 
-# empty strings from id 31353 to 31359
 msgctxt "#31360"
 msgid "Master Mode Off"
 msgstr ""
@@ -684,7 +675,6 @@ msgctxt "#31361"
 msgid "Master Mode On"
 msgstr ""
 
-# empty strings from id 31362 to 31370
 msgctxt "#31371"
 msgid "Finish Time:"
 msgstr ""
@@ -693,12 +683,10 @@ msgctxt "#31372"
 msgid "Now Playing..."
 msgstr ""
 
-# empty strings from id 31373 to 31404
 msgctxt "#31405"
 msgid "Login"
 msgstr ""
 
-# empty strings from id 31406 to 31439
 msgctxt "#31440"
 msgid "System Info"
 msgstr ""
@@ -707,7 +695,6 @@ msgctxt "#31441"
 msgid "Quick Navigation"
 msgstr ""
 
-# empty string with id 31442
 msgctxt "#31443"
 msgid "Now Playing"
 msgstr ""
@@ -732,7 +719,6 @@ msgctxt "#31448"
 msgid "Pictures"
 msgstr ""
 
-# empty string with id 31449
 msgctxt "#31450"
 msgid "New Movies"
 msgstr ""
@@ -777,7 +763,6 @@ msgctxt "#31460"
 msgid "Quick Navigation"
 msgstr ""
 
-# empty strings from id 31461 to 31503
 msgctxt "#31504"
 msgid "Applications"
 msgstr ""
@@ -786,12 +771,10 @@ msgctxt "#31505"
 msgid "Press \"Up\" to Eject"
 msgstr ""
 
-# empty string with id 31506
 msgctxt "#31507"
 msgid "Power"
 msgstr ""
 
-# empty strings from id 31508 to 31523
 msgctxt "#31524"
 msgid "Home"
 msgstr ""
@@ -800,7 +783,6 @@ msgctxt "#31525"
 msgid "Search Kodi for"
 msgstr ""
 
-# empty strings from id 31526 to 31549
 msgctxt "#31550"
 msgid "Spotlight"
 msgstr ""
@@ -829,7 +811,6 @@ msgctxt "#31556"
 msgid "Featured Albums"
 msgstr ""
 
-# empty strings from id 31557 to 31561
 msgctxt "#31562"
 msgid "Loading Weather..."
 msgstr ""
@@ -842,7 +823,6 @@ msgctxt "#31564"
 msgid "Loading"
 msgstr ""
 
-# empty strings from id 31565 to 31599
 msgctxt "#31600"
 msgid "Options"
 msgstr ""
@@ -851,7 +831,6 @@ msgctxt "#31601"
 msgid "Initializing Skin"
 msgstr ""
 
-# empty strings from id 31602 to 31619
 msgctxt "#31620"
 msgid "View Options"
 msgstr ""
@@ -864,7 +843,6 @@ msgctxt "#31622"
 msgid "Reset Games Path"
 msgstr ""
 
-# empty strings from id 31623 to 31688
 msgctxt "#31689"
 msgid "Location"
 msgstr ""
@@ -897,37 +875,30 @@ msgctxt "#31696"
 msgid "24 Hours in Detail"
 msgstr ""
 
-# empty strings from id 31697 to 31715
 msgctxt "#31716"
 msgid "Playlist Options"
 msgstr ""
 
-# empty strings from id 31717 to 31804
 msgctxt "#31805"
 msgid "Aired"
 msgstr ""
 
-# empty strings from id 31806 to 31812
 msgctxt "#31813"
 msgid "Episodes"
 msgstr ""
 
-# empty strings from id 31814 to 31816
 msgctxt "#31817"
 msgid "Items"
 msgstr ""
 
-# empty string with id 31818
 msgctxt "#31819"
 msgid "Page"
 msgstr ""
 
-# empty strings from id 31820 to 31821
 msgctxt "#31822"
 msgid "Item"
 msgstr ""
 
-# empty strings from id 31823 to 31899
 msgctxt "#31900"
 msgid "Player information"
 msgstr ""
@@ -940,7 +911,6 @@ msgctxt "#31902"
 msgid "Pixel format"
 msgstr ""
 
-# empty strings from id 31903 to 31919
 msgctxt "#31920"
 msgid "Recently Added"
 msgstr ""
@@ -1221,7 +1191,6 @@ msgctxt "#31993"
 msgid "Auto Login"
 msgstr ""
 
-# empty string with id 31994
 msgctxt "#31995"
 msgid "Set Custom Overlay"
 msgstr ""
@@ -1229,7 +1198,3 @@ msgstr ""
 msgctxt "#31996"
 msgid "Hide Date"
 msgstr ""
-
-msgctxt "#31094"
-msgid "Hide Progress Bar"
-msgstr "Ocultar o Barra de Progresso"

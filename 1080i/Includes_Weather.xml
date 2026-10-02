@@ -2763,10 +2763,6 @@
                     </focusedlayout>
                     <content>
                         <item>
-                            <icon>$LOCALIZE[31909]</icon>
-                            <visible>String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-                        </item>
-                        <item>
                             <label>$INFO[Window.Property(Hourly.1.Time)]</label>
                             <label2>$INFO[Window.Property(Hourly.1.ShortDate)]</label2>
                             <icon>$INFO[Window.Property(Hourly.1.FanartCode),weather/small/,.png]</icon>
